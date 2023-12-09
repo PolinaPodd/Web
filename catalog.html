@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="type.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>INTERPROM</title>
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">
+        <img src="http://test.interprom-spb.ru/include/images/logo.png" width="80" height="80" alt="Главная">
+    </div>
+</header>
+
+<section class="information">
+    <a class="information-main" href="index.html" >Главная</a>
+    <a class="information-about" href="about.html">О компании</a>
+    <a class="information-catalog" href="catalog.html">Каталог станков и оборудования</a>
+    <a class="information-contact" href="contact.html">Контакты</a>
+    <a class="information-delivery" href="delivery.html">Доставка в регионы России</a>
+</section>
+<main class="body">
+    <section>
+        <div class="site-left">
+            <p>Каталог станков и оборудовани</p>
+            <p class="left-press">>Прессовое оборудование</p>
+            <p class="left-tool">>Станки</p>
+            <p class="left-equipment">>Оснастка</p>
+            <p class="left-comment">Отзывы</p>
+        </div>
+
+    </section>
+    <div class="dil-inf">
+        <p>Прессовое оборудование</p>
+    </div>
+    <section class="create-table">
+        <h3>Создать таблицу</h3>
+        <form id="tableForm">
+            <label for="machineType">Вид станка:</label>
+            <select id="machineType" name="machineType">
+                <option value="Пневматические прессы">Пневматические прессы</option>
+                <option value="Гидравлические прессы">Гидравлические прессы</option>
+                <option value="Пробивные прессы">Пробивные прессы</option>
+            </select><br>
+
+            <label for="holeDiameter">Отверстие диаметром:</label>
+            <input type="number" id="holeDiameter" name="holeDiameter" required><br>
+
+            <label for="enginePower">Мощность двигателя:</label>
+            <input type="number" id="enginePower" name="enginePower" required><br>
+
+            <label for="country">Страна производителя:</label>
+            <select id="country" name="country">
+                <option value="Тайвань">Тайвань</option>
+                <option value="Китай">Китай</option>
+                <option value="Япония">Япония</option>
+            </select><br>
+
+            <label for="control">Управление:</label>
+            <select id="control" name="control">
+                <option value="ручное">Ручное</option>
+                <option value="машинное">Машинное</option>
+            </select><br>
+
+            <button type="button" onclick="generateTable()">Создать таблицу</button>
+        </form>
+    </section>
+
+    <div id="tableContainer"></div>
+    <div class="site-left">
+        <h3>Реализованные проекты</h3>
+        <p>Вы можете ознакомиться с некоторыми успешно реализованными проектами на нашем канале Youtube перейдя по ссылке ниже</p>
+        <ul>
+            <li>8-812-497-41-81</li>
+            <li>sales@interprom-spb.ru</li>
+        </ul>
+    </div>
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <p>© Интерпром, 2013—2023</p>
+        <h5 id="loadTime"></h5>
+    </div>
+</footer>
+<script src="js.js"></script>
+</body>
+</html>
